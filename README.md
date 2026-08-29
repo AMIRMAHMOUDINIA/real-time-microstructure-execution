@@ -1,38 +1,24 @@
 # Real-Time Microstructure Execution Research
 
-A reproducible quantitative research project testing whether **Level-1 order-book imbalance predicts short-horizon BTCUSDT price moves and whether that signal survives causal bid/ask execution, latency, and transaction-cost stress**.
+Execution-aware BTCUSDT market-microstructure research testing whether **Level-1 order-book imbalance predicts 1-second price moves and survives causal bid/ask execution, latency, and transaction-cost stress**.
 
-The project follows a strict research sequence:
+**Research design:** live data → signal development → frozen statistical protocol → five unseen holdouts → frozen execution protocol → one-shot execution evaluation → robustness diagnostics.
 
-> **live data → signal discovery → pre-registration → unseen statistical holdout → frozen execution protocol → one-shot execution holdout → robustness diagnostics**
-
-The objective is not to maximize a backtest. It is to determine whether a simple market-microstructure relationship survives progressively more realistic tests without changing the strategy after observing holdout results.
-
----
-
-## Headline Result
-
-At the pre-specified **100 ms execution latency**, the frozen strategy produced:
+## Key Results
 
 | Metric | Holdout result |
-|---|---:|
-| Holdout sessions | 5 |
+| --- | ---: |
 | Positive holdout sessions | **5 / 5** |
-| Completed holdout trades | 662 |
-| Equal-weight gross return | **+0.1733 bps/trade** |
-| Development result | +0.1766 bps/trade |
-| Holdout/development retention | **98.2%** |
+| Completed trades | 662 |
+| Equal-weight gross return at 100 ms | **+0.1733 bps/trade** |
+| Development-to-holdout retention | **98.2%** |
 | Break-even additional cost | **0.0867 bps/side** |
-| Long mean return | +0.2039 bps |
-| Short mean return | +0.1769 bps |
 
-The signal survived the primary execution test, but its economic margin was narrow.
+At **0.05 bps additional cost per side**, mean performance remained positive. At **0.10 bps per side**, it became negative.
 
-At **0.05 bps additional cost per side**, the strategy remained positive on average.
+The result supports a replicated short-horizon microstructure relationship under a causal spread-aware execution model, but the economic margin is narrow. **This is validation evidence, not production-ready alpha.**
 
-At **0.10 bps per side**, the mean became negative.
-
-This repository therefore provides evidence of a reproducible short-horizon microstructure relationship, **not production-ready profitability**.
+[Full research record](RESEARCH_SUMMARY.md) · [Validation protocol](VALIDATION_PROTOCOL.md) · [Execution protocol](EXECUTION_PROTOCOL.md)
 
 ---
 
