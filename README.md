@@ -72,11 +72,11 @@ This repository therefore provides evidence of a reproducible short-horizon micr
 
 The primary signal is Level-1 order-book imbalance:
 
-\[
+$$
 I_t =
 \frac{Q^{bid}_t-Q^{ask}_t}
      {Q^{bid}_t+Q^{ask}_t}
-\]
+$$
 
 where \(Q^{bid}_t\) and \(Q^{ask}_t\) are the quantities available at the best bid and ask.
 
@@ -84,9 +84,9 @@ One-second observations are aggregated using **median book imbalance**.
 
 The primary prediction horizon is:
 
-\[
+$$
 1\text{ second}
-\]
+$$
 
 Development-only thresholds were frozen as:
 
@@ -100,15 +100,15 @@ Development-only thresholds were frozen as:
 
 A feature timestamp \(t\) summarizes information observed during:
 
-\[
+$$
 [t,t+1)
-\]
+$$
 
 The strategy therefore cannot act at \(t\). The earliest decision occurs at:
 
-\[
+$$
 t+1
-\]
+$$
 
 The primary specification adds **100 ms modeled latency** and then selects the **first locally received Level-1 quote at or after the target timestamp**.
 
@@ -150,21 +150,21 @@ All five sessions remained positive.
 
 Equal-weight holdout result:
 
-\[
+$$
 \boxed{+0.1733\text{ bps/trade}}
-\]
+$$
 
 Development result:
 
-\[
+$$
 +0.1766\text{ bps/trade}
-\]
+$$
 
 Execution-stage retention:
 
-\[
+$$
 98.2\%
-\]
+$$
 
 ---
 
@@ -202,9 +202,9 @@ At the primary 100 ms latency:
 
 Estimated continuous break-even additional cost:
 
-\[
+$$
 0.0867\text{ bps/side}
-\]
+$$
 
 This is the principal economic limitation of the strategy.
 
@@ -233,15 +233,15 @@ Pooled gross-return statistics:
 
 Mean winning trade:
 
-\[
+$$
 +0.717591\text{ bps}
-\]
+$$
 
 Mean losing trade:
 
-\[
+$$
 -0.041010\text{ bps}
-\]
+$$
 
 The strategy therefore does not depend on a high hit rate. Many outcomes are very small losses or near-zero changes, while fewer favorable moves are substantially larger.
 
@@ -303,9 +303,9 @@ Removing each holdout session in turn produced:
 
 The minimum leave-one-session-out result was:
 
-\[
+$$
 +0.1530\text{ bps/trade}
-\]
+$$
 
 The aggregate execution result was therefore not dependent on a single holdout window.
 
@@ -322,39 +322,39 @@ A post-hoc uncertainty diagnostic used:
 
 At zero additional cost, the hierarchical bootstrap produced:
 
-\[
+$$
 \text{mean}=+0.17335\text{ bps}
-\]
+$$
 
 with a 95% interval of:
 
-\[
+$$
 [+0.09147,\,+0.25315]
-\]
+$$
 
 At an additional cost of 0.05 bps per side:
 
-\[
+$$
 \text{mean}=+0.07335\text{ bps}
-\]
+$$
 
 with a 95% interval of:
 
-\[
+$$
 [-0.00853,\,+0.15315]
-\]
+$$
 
 At an additional cost of 0.10 bps per side:
 
-\[
+$$
 \text{mean}=-0.02665\text{ bps}
-\]
+$$
 
 with a 95% interval of:
 
-\[
+$$
 [-0.10853,\,+0.05315]
-\]
+$$
 
 The underlying spread-aware signal appears more robust than its economically tradable margin.
 
@@ -585,9 +585,9 @@ Operate the same causal execution logic prospectively while recording:
 
 Introduce bounded inventory and explicit exposure controls, for example:
 
-\[
+$$
 position \in \{-1,0,+1\}
-\]
+$$
 
 This should be treated as a new engineering/research extension rather than retroactively modifying the completed holdout result.
 
