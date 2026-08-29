@@ -60,19 +60,15 @@ The primary signal is Level-1 order-book imbalance:
 
 $$
 I_t =
-\frac{Q^{bid}_t-Q^{ask}_t}
-     {Q^{bid}_t+Q^{ask}_t}
+\frac{Q_t^{bid} - Q_t^{ask}}
+     {Q_t^{bid} + Q_t^{ask}}
 $$
 
-where \(Q^{bid}_t\) and \(Q^{ask}_t\) are the quantities available at the best bid and ask.
+where $Q_t^{bid}$ and $Q_t^{ask}$ are the quantities available at the best bid and ask.
 
 One-second observations are aggregated using **median book imbalance**.
 
-The primary prediction horizon is:
-
-$$
-1\text{ second}
-$$
+The primary prediction horizon is **1 second**.
 
 Development-only thresholds were frozen as:
 
@@ -84,13 +80,13 @@ Development-only thresholds were frozen as:
 
 ## Causal Execution Model
 
-A feature timestamp \(t\) summarizes information observed during:
+A feature timestamp $t$ summarizes information observed during:
 
 $$
 [t,t+1)
 $$
 
-The strategy therefore cannot act at \(t\). The earliest decision occurs at:
+The strategy therefore cannot act at $t$. The earliest decision occurs at:
 
 $$
 t+1
@@ -125,7 +121,7 @@ The execution protocol, thresholds, simulator, and evaluator were frozen before 
 At the primary **100 ms latency**:
 
 | Session | Mean gross return |
-|---|---:|
+| --- | ---: |
 | Holdout 1 | +0.1104 bps/trade |
 | Holdout 2 | +0.2149 |
 | Holdout 3 | +0.2409 |
@@ -159,7 +155,7 @@ $$
 The latency grid was fixed before holdout execution.
 
 | Latency | Equal-weight gross return |
-|---|---:|
+| --- | ---: |
 | 0 ms | +0.1804 bps |
 | 50 ms | +0.1731 |
 | **100 ms** | **+0.1733** |
@@ -176,7 +172,7 @@ Performance generally declined as latency increased, while all five holdout sess
 At the primary 100 ms latency:
 
 | Additional cost per side | Equal-weight mean net return |
-|---|---:|
+| --- | ---: |
 | 0.00 bps | +0.1733 bps/trade |
 | 0.05 bps | +0.0733 |
 | 0.10 bps | -0.0267 |
@@ -210,7 +206,7 @@ At the 100 ms reference latency, the holdout evaluation contained:
 Pooled gross-return statistics:
 
 | Statistic | Result |
-|---|---:|
+| --- | ---: |
 | Mean | +0.189754 bps |
 | Median | -0.001253 bps |
 | Standard deviation | 0.552915 bps |
@@ -238,7 +234,7 @@ The strategy therefore does not depend on a high hit rate. Many outcomes are ver
 Gross PnL is materially right-skewed:
 
 | Largest trades | Share of total gross PnL |
-|---|---:|
+| --- | ---: |
 | Top 1% | 16.4% |
 | Top 5% | 51.3% |
 | Top 10% | 78.4% |
@@ -246,7 +242,7 @@ Gross PnL is materially right-skewed:
 Removing the largest observations still left positive pooled expectancy:
 
 | Trades removed | Remaining mean |
-|---|---:|
+| --- | ---: |
 | Top 1% | +0.1603 bps |
 | Top 5% | +0.0974 bps |
 | Top 10% | +0.0457 bps |
@@ -262,7 +258,7 @@ The result is therefore tail-dependent, but not explained solely by a handful of
 Both trading directions contributed positively:
 
 | Direction | Trades | Mean gross return |
-|---|---:|---:|
+| --- | ---: | ---: |
 | LONG | 315 | +0.2039 bps |
 | SHORT | 347 | +0.1769 bps |
 
@@ -280,7 +276,7 @@ The result was therefore not produced only by one directional market regime.
 Removing each holdout session in turn produced:
 
 | Removed session | Remaining equal-weight mean |
-|---|---:|
+| --- | ---: |
 | Holdout 1 | +0.1891 bps |
 | Holdout 2 | +0.1629 bps |
 | Holdout 3 | +0.1564 bps |
@@ -315,7 +311,7 @@ $$
 with a 95% interval of:
 
 $$
-[+0.09147,\,+0.25315]
+\left[+0.09147,\,+0.25315\right]
 $$
 
 At an additional cost of 0.05 bps per side:
@@ -327,7 +323,7 @@ $$
 with a 95% interval of:
 
 $$
-[-0.00853,\,+0.15315]
+\left[-0.00853,\,+0.15315\right]
 $$
 
 At an additional cost of 0.10 bps per side:
@@ -339,7 +335,7 @@ $$
 with a 95% interval of:
 
 $$
-[-0.10853,\,+0.05315]
+\left[-0.10853,\,+0.05315\right]
 $$
 
 The underlying spread-aware signal appears more robust than its economically tradable margin.
