@@ -1,0 +1,219 @@
+# =============================================================================
+# Python
+# =============================================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# =============================================================================
+# Virtual environments
+# =============================================================================
+
+.venv/
+venv/
+env/
+ENV/
+
+# Project environment is currently stored outside the repository,
+# but ignore any local environment accidentally created here.
+rtme/
+
+
+# =============================================================================
+# Secrets / credentials
+# =============================================================================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+secrets/
+credentials/
+
+
+# =============================================================================
+# IDE / editor files
+# =============================================================================
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+*~
+*.tmp
+
+
+# =============================================================================
+# Operating-system files
+# =============================================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# =============================================================================
+# Logs / runtime artifacts
+# =============================================================================
+
+*.log
+logs/
+
+*.pid
+*.lock
+
+
+# =============================================================================
+# Raw market data
+#
+# Raw WebSocket captures are intentionally excluded from Git.
+# They can become large and are generated locally.
+# =============================================================================
+
+data/raw/*
+
+# Keep directory structure in Git if .gitkeep is added.
+!data/raw/.gitkeep
+
+
+# =============================================================================
+# Processed/generated data
+#
+# Ignore generated outputs by default, then explicitly retain the compact
+# research artifacts required to understand the frozen results.
+# =============================================================================
+
+data/processed/*
+
+
+# -----------------------------------------------------------------------------
+# Frozen execution parameters
+# -----------------------------------------------------------------------------
+
+!data/processed/execution_parameters.csv
+
+
+# -----------------------------------------------------------------------------
+# Statistical holdout validation
+# -----------------------------------------------------------------------------
+
+!data/processed/holdout_validation_session_results.csv
+!data/processed/holdout_validation_summary.csv
+!data/processed/development_vs_holdout_comparison.csv
+
+
+# -----------------------------------------------------------------------------
+# Development execution summaries
+# -----------------------------------------------------------------------------
+
+!data/processed/execution_summary_development.csv
+!data/processed/execution_session_latency_development.csv
+!data/processed/execution_latency_sensitivity_development.csv
+!data/processed/execution_cost_sensitivity_development.csv
+
+
+# -----------------------------------------------------------------------------
+# Holdout execution summaries
+# -----------------------------------------------------------------------------
+
+!data/processed/execution_summary_holdout.csv
+!data/processed/execution_session_latency_holdout.csv
+!data/processed/execution_latency_sensitivity_holdout.csv
+!data/processed/execution_cost_sensitivity_holdout.csv
+!data/processed/execution_development_vs_holdout.csv
+
+
+# -----------------------------------------------------------------------------
+# Post-hoc holdout diagnostics
+# -----------------------------------------------------------------------------
+
+!data/processed/execution_tail_diagnostics_holdout.csv
+!data/processed/execution_direction_diagnostics_holdout.csv
+!data/processed/execution_stability_bootstrap_holdout.csv
+!data/processed/execution_stability_sessions_holdout.csv
+
+
+# =============================================================================
+# Large trade-level generated files
+#
+# These are reproducible outputs but are omitted from the public repository
+# to keep it compact. Their hashes remain documented by the frozen checkpoints.
+# =============================================================================
+
+data/processed/execution_trades_development.csv
+data/processed/execution_trades_holdout.csv
+
+
+# =============================================================================
+# Temporary exports / manual inspection files
+# =============================================================================
+
+output/
+outputs/
+temp/
+tmp/
+
+*.bak
+*.old
+
+
+# =============================================================================
+# Local profiling / debugging
+# =============================================================================
+
+profile/
+*.prof
+*.trace
+
+
+# =============================================================================
+# Packaging artifacts
+# =============================================================================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+
+# =============================================================================
+# Do NOT ignore the research record
+#
+# The following remain tracked automatically:
+#
+# README.md
+# RESEARCH_SUMMARY.md
+# VALIDATION_PROTOCOL.md
+# EXECUTION_PROTOCOL.md
+# *_SHA256.txt
+# src/
+# =============================================================================
+.venv-wsl/
+
+# =============================================================================
+# Local experiment manifest
+# =============================================================================
+
+data/experiment_manifest.csv
+
+# Public statistical development summaries
+!data/processed/statistical_validation_session_results.csv
+!data/processed/statistical_validation_summary.csv

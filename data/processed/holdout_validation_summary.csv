@@ -1,0 +1,2 @@
+sample,sessions,positive_beta_sessions,beta_sign_test_p_value,positive_qspread_sessions,qspread_sign_test_p_value,mean_qspread_1s_bps,median_qspread_1s_bps,mean_qspread_5s_bps,mean_qspread_1s_ge25_bps,mean_beta_1s,median_beta_1s,meta_bootstrap_mean_beta,meta_bootstrap_ci_low,meta_bootstrap_ci_high,meta_bootstrap_positive_rate
+pre_registered_holdout,5,5,0.03125,5,0.03125,0.2977127286375343,0.35716222544190007,0.8804583272603818,0.41312110252671586,0.1623256745011364,0.20379790992384406,0.16680221871740275,0.13889072508556757,0.19320820169726638,1.0

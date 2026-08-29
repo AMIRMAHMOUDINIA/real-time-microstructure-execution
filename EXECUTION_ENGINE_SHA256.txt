@@ -1,0 +1,8 @@
+]633;E;echo "EXECUTION ENGINE — DEVELOPMENT VALIDATED";5f6c0efa-8942-4067-8061-adb7f9bf4eca]633;CEXECUTION ENGINE — DEVELOPMENT VALIDATED
+Frozen at UTC: 2026-08-29T10:14:17Z
+
+ef534c27856907e45ac871db8d4d499ddb338ffe114169f3ea2ee796f8265d6e  EXECUTION_PROTOCOL.md
+1fc3aa7cd92408161c41c067d4329d2f93953361637fbd143b03f2c0a1e2298b  data/processed/execution_parameters.csv
+7a24cbe27a2f7e92e2d935ed22cb7de7f764f457a1e96f1f868fc1266ce39e23  src/data/simulate_execution_development.py
+aa165ce81d5cd7c05912e00d7565087871503d90370834b1053f345b7e0543d0  data/processed/execution_trades_development.csv
+ac9a0ad1b4013a54460d731591adab7baa9cc63defceb62668355711d870b43f  data/processed/execution_summary_development.csv

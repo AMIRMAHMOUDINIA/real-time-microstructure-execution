@@ -1,0 +1,7 @@
+]633;E;echo "HOLDOUT VALIDATION RESULTS — FROZEN";5f6c0efa-8942-4067-8061-adb7f9bf4eca]633;CHOLDOUT VALIDATION RESULTS — FROZEN
+Frozen at UTC: 2026-08-29T09:48:21Z
+
+6d2ed10e1e18b04e873cebee8033191fc8710866eedd3d574e4b547aabc491da  VALIDATION_PROTOCOL.md
+f4366b42e718cc3db220a16d2bf80fef98c5ceb8a382390345852bbe86cb9041  data/processed/holdout_validation_session_results.csv
+3cba989939b9e925c9cd72e38f6484aeecb867d3d796373b78fdd49b00cb782e  data/processed/holdout_validation_summary.csv
+eaa26eb47795badbcbfc61463bc5bbedd076bbb8e79e667291f43c19b51ffc69  data/processed/development_vs_holdout_comparison.csv

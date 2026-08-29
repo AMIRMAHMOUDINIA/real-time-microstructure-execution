@@ -1,0 +1,13 @@
+completed_at_utc,session_id,label,requested_seconds,book_file,trade_file,feature_file
+2026-08-24T13:29:02.825774+00:00,20260824_132750,pipeline_test,60,data/raw/btcusdt_book_20260824_132750.csv,data/raw/btcusdt_trades_20260824_132750.csv,data/processed/btcusdt_features_20260824_132750.csv
+2026-08-24T13:48:52.913910+00:00,20260824_134740,pipeline_check_v2,60,data/raw/btcusdt_book_20260824_134740.csv,data/raw/btcusdt_trades_20260824_134740.csv,data/processed/btcusdt_features_20260824_134740.csv
+2026-08-24T14:01:43.901540+00:00,20260824_135129,afternoon_1,600,data/raw/btcusdt_book_20260824_135129.csv,data/raw/btcusdt_trades_20260824_135129.csv,data/processed/btcusdt_features_20260824_135129.csv
+2026-08-25T08:59:19.205460+00:00,20260825_084855,morning_1,600,data/raw/btcusdt_book_20260825_084855.csv,data/raw/btcusdt_trades_20260825_084855.csv,data/processed/btcusdt_features_20260825_084855.csv
+2026-08-26T14:44:29.616725+00:00,20260826_085550,morning_2,600,data/raw/btcusdt_book_20260826_085550.csv,data/raw/btcusdt_trades_20260826_085550.csv,data/processed/btcusdt_features_20260826_085550.csv
+2026-08-26T14:55:59.190847+00:00,20260826_144545,evening_1,600,data/raw/btcusdt_book_20260826_144545.csv,data/raw/btcusdt_trades_20260826_144545.csv,data/processed/btcusdt_features_20260826_144545.csv
+2026-08-26T15:23:42.198454+00:00,20260826_151328,late_afternoon_1,600,data/raw/btcusdt_book_20260826_151328.csv,data/raw/btcusdt_trades_20260826_151328.csv,data/processed/btcusdt_features_20260826_151328.csv
+2026-08-26T20:38:08.525410+00:00,20260826_202754,holdout_1,600,data/raw/btcusdt_book_20260826_202754.csv,data/raw/btcusdt_trades_20260826_202754.csv,data/processed/btcusdt_features_20260826_202754.csv
+2026-08-27T09:15:07+00:00,20260827_083158,holdout_2,600,data/raw/btcusdt_book_20260827_083158.csv,data/raw/btcusdt_trades_20260827_083158.csv,data/processed/btcusdt_features_20260827_083158.csv
+2026-08-27T20:10:00.845403+00:00,20260827_195947,holdout_3,600,data/raw/btcusdt_book_20260827_195947.csv,data/raw/btcusdt_trades_20260827_195947.csv,data/processed/btcusdt_features_20260827_195947.csv
+2026-08-28T15:43:48.849929+00:00,20260828_153334,holdout_4,600,data/raw/btcusdt_book_20260828_153334.csv,data/raw/btcusdt_trades_20260828_153334.csv,data/processed/btcusdt_features_20260828_153334.csv
+2026-08-29T09:28:06.241288+00:00,20260829_091754,holdout_5,600,data/raw/btcusdt_book_20260829_091754.csv,data/raw/btcusdt_trades_20260829_091754.csv,data/processed/btcusdt_features_20260829_091754.csv

@@ -1,0 +1,10 @@
+]633;E;echo "DEVELOPMENT EXECUTION EVALUATION — FROZEN";5f6c0efa-8942-4067-8061-adb7f9bf4eca]633;CDEVELOPMENT EXECUTION EVALUATION — FROZEN
+Frozen at UTC: 2026-08-29T10:25:31Z
+
+ef534c27856907e45ac871db8d4d499ddb338ffe114169f3ea2ee796f8265d6e  EXECUTION_PROTOCOL.md
+1fc3aa7cd92408161c41c067d4329d2f93953361637fbd143b03f2c0a1e2298b  data/processed/execution_parameters.csv
+7a24cbe27a2f7e92e2d935ed22cb7de7f764f457a1e96f1f868fc1266ce39e23  src/data/simulate_execution_development.py
+a1e7335beb0890a2f7bffc8f94ba0b0147f8f0d7d5b7fb9382aaebec9f08c053  src/data/evaluate_execution_development.py
+cb1def97b2b756d3e91961029cf9888ff0fa030531f6bf9bc31e3d4a11fc43b5  data/processed/execution_session_latency_development.csv
+82e8900be4afc022adc5b1069190b37ddb708f8c5eff0ab35269eb209b6b8790  data/processed/execution_latency_sensitivity_development.csv
+f553468e766651c9c4718dbeb1a27fe3bcf409db05136d4f7167a681d77025a0  data/processed/execution_cost_sensitivity_development.csv
