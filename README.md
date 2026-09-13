@@ -165,7 +165,7 @@ The latency grid was fixed before holdout execution.
 
 Performance generally declined as latency increased, while all five holdout sessions remained positive throughout the tested grid.
 
-![Holdout execution latency sensitivity](figures/latency_sensitivity_holdout.png)
+![Holdout execution latency sensitivity](./figures/latency_sensitivity_holdout.png?raw=1)
 
 ---
 
