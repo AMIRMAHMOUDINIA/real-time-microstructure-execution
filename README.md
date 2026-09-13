@@ -165,6 +165,8 @@ The latency grid was fixed before holdout execution.
 
 Performance generally declined as latency increased, while all five holdout sessions remained positive throughout the tested grid.
 
+![Holdout execution latency sensitivity](figures/latency_sensitivity_holdout.png)
+
 ---
 
 ## Transaction-Cost Frontier
@@ -434,7 +436,12 @@ The detailed methodology, numerical results, and research boundaries are documen
     │       ├── evaluate_execution_development.py
     │       ├── evaluate_execution_holdout.py
     │       ├── analyze_execution_tail_risk.py
-    │       └── analyze_execution_stability.py
+    │       ├── analyze_execution_stability.py
+    │       └── plot_latency_sensitivity.py
+    │
+    ├── figures/
+    │   ├── latency_sensitivity_holdout.png
+    │   └── latency_sensitivity_holdout.svg
     │
     └── data/
         ├── raw/
@@ -451,6 +458,7 @@ Compact validation tables and frozen research outputs are retained where useful 
 - Python
 - pandas
 - NumPy
+- Matplotlib
 - SciPy
 - statsmodels
 - asyncio
