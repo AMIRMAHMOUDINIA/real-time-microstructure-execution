@@ -453,6 +453,7 @@ The detailed methodology, numerical results, and research boundaries are documen
     ├── DATA_AVAILABILITY.md
     ├── VALIDATION_PROTOCOL.md
     ├── EXECUTION_PROTOCOL.md
+    ├── LICENSE
     ├── requirements.txt
     │
     ├── checksums/
@@ -665,3 +666,9 @@ Any new conditional strategy requires a fresh development/validation cycle.
 For the complete methodology, frozen protocols, statistical results, execution analysis, diagnostic results, limitations, and reproducibility record, see:
 
 **`RESEARCH_SUMMARY.md`**
+
+---
+
+## License
+
+This project is released under the [MIT License](LICENSE).
