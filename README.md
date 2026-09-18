@@ -18,7 +18,7 @@ At **0.05 bps additional cost per side**, mean performance remained positive. At
 
 The result supports a replicated short-horizon microstructure relationship under a causal spread-aware execution model, but the economic margin is narrow. **This is validation evidence, not production-ready alpha.**
 
-[Full research record](RESEARCH_SUMMARY.md) · [Validation protocol](VALIDATION_PROTOCOL.md) · [Execution protocol](EXECUTION_PROTOCOL.md)
+[Full research record](RESEARCH_SUMMARY.md) · [Validation status](VALIDATION_STATUS.md) · [Validation protocol](VALIDATION_PROTOCOL.md) · [Execution protocol](EXECUTION_PROTOCOL.md)
 
 ---
 
