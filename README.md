@@ -194,6 +194,8 @@ This is the principal economic limitation of the strategy.
 
 The predictive relationship survives spread-aware execution, but the remaining monetizable margin is small.
 
+![Holdout execution transaction-cost frontier](./figures/transaction_cost_frontier_holdout.png?raw=1)
+
 ---
 
 ## Return Distribution
@@ -437,11 +439,14 @@ The detailed methodology, numerical results, and research boundaries are documen
     │       ├── evaluate_execution_holdout.py
     │       ├── analyze_execution_tail_risk.py
     │       ├── analyze_execution_stability.py
-    │       └── plot_latency_sensitivity.py
+    │       ├── plot_latency_sensitivity.py
+    │       └── plot_cost_sensitivity.py
     │
     ├── figures/
     │   ├── latency_sensitivity_holdout.png
-    │   └── latency_sensitivity_holdout.svg
+    │   ├── latency_sensitivity_holdout.svg
+    │   ├── transaction_cost_frontier_holdout.png
+    │   └── transaction_cost_frontier_holdout.svg
     │
     └── data/
         ├── raw/
