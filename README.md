@@ -20,6 +20,37 @@ The result supports a replicated short-horizon microstructure relationship under
 
 [Full research record](RESEARCH_SUMMARY.md) · [Validation status](VALIDATION_STATUS.md) · [Data availability](DATA_AVAILABILITY.md) · [Validation protocol](VALIDATION_PROTOCOL.md) · [Execution protocol](EXECUTION_PROTOCOL.md)
 
+## Quick Start
+
+Clone the repository and create an isolated Python environment:
+
+```bash
+git clone https://github.com/AMIRMAHMOUDINIA/real-time-microstructure-execution.git
+cd real-time-microstructure-execution
+
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+On Windows Command Prompt, activate the environment with:
+
+```text
+.venv\Scripts\activate
+```
+
+The two published robustness figures can be regenerated directly from the retained public summary tables:
+
+```bash
+python src/data/plot_latency_sensitivity.py
+python src/data/plot_cost_sensitivity.py
+```
+
+Generated figures are written to `figures/`.
+
+The complete historical experiment cannot be rerun from a fresh clone because the original raw WebSocket captures and large trade-level files are intentionally excluded. See [Data availability](DATA_AVAILABILITY.md) for the exact reproducibility boundary.
+
 ---
 
 ## Research Architecture
