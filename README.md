@@ -418,9 +418,21 @@ The detailed methodology, numerical results, and research boundaries are documen
     .
     ├── README.md
     ├── RESEARCH_SUMMARY.md
+    ├── VALIDATION_STATUS.md
     ├── VALIDATION_PROTOCOL.md
     ├── EXECUTION_PROTOCOL.md
     ├── requirements.txt
+    │
+    ├── checksums/
+    │   ├── DOCUMENTATION_SHA256.txt
+    │   ├── VALIDATION_PROTOCOL_SHA256.txt
+    │   ├── DEVELOPMENT_EXECUTION_SHA256.txt
+    │   ├── EXECUTION_ENGINE_SHA256.txt
+    │   ├── EXECUTION_PARAMETERS_SHA256.txt
+    │   ├── EXECUTION_STABILITY_SHA256.txt
+    │   ├── EXECUTION_TAIL_DIAGNOSTICS_SHA256.txt
+    │   ├── HOLDOUT_EXECUTION_SHA256.txt
+    │   └── HOLDOUT_RESULTS_SHA256.txt
     │
     ├── src/
     │   └── data/
