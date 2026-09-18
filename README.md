@@ -151,9 +151,9 @@ The execution protocol, thresholds, simulator, and evaluator were frozen before 
 
 At the primary **100 ms latency**:
 
-| Session | Mean gross return |
+| Session | Mean gross return (bps/trade) |
 | --- | ---: |
-| Holdout 1 | +0.1104 bps/trade |
+| Holdout 1 | +0.1104 |
 | Holdout 2 | +0.2149 |
 | Holdout 3 | +0.2409 |
 | Holdout 4 | +0.2545 |
@@ -175,9 +175,7 @@ $$
 
 Execution-stage retention:
 
-$$
-98.2\%
-$$
+**98.2%**
 
 ---
 
@@ -534,7 +532,7 @@ The repository demonstrates:
 - careful timestamp semantics
 - look-ahead prevention
 - exploratory-versus-confirmatory separation
-- pre-registration
+- pre-specified protocol freezing before holdout evaluation
 - unseen holdout testing
 - HAC inference
 - dependence-aware resampling
