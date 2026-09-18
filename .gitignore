@@ -201,9 +201,11 @@ dist/
 #
 # README.md
 # RESEARCH_SUMMARY.md
+# VALIDATION_STATUS.md
+# DATA_AVAILABILITY.md
 # VALIDATION_PROTOCOL.md
 # EXECUTION_PROTOCOL.md
-# *_SHA256.txt
+# checksums/
 # src/
 # =============================================================================
 .venv-wsl/
