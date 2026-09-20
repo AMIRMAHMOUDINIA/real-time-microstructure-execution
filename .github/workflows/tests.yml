@@ -24,11 +24,21 @@ jobs:
           cache-dependency-path: |
             requirements.txt
             requirements-dev.txt
+            pyproject.toml
 
-      - name: Install dependencies
+      - name: Install development dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements-dev.txt
+
+      - name: Install project package
+        run: python -m pip install -e .
+
+      - name: Verify package imports
+        run: |
+          python -c "import src.data.build_session_features"
+          python -c "import src.data.simulate_execution_development"
+          python -c "print('package imports: OK')"
 
       - name: Run test suite
         run: python -m pytest -q
