@@ -8,7 +8,7 @@ Execution-aware BTCUSDT market-microstructure research testing whether **Level-1
 
 | Metric | Holdout result |
 | --- | ---: |
-| Positive holdout sessions | **5 / 5** |
+| Positive holdout sessions | **5 / 5 (10 min each; 50 min total)** |
 | Completed trades | 662 |
 | Equal-weight gross return at 100 ms | **+0.1733 bps/trade** |
 | Development-to-holdout retention | **98.2%** |
