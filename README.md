@@ -18,7 +18,7 @@ At **0.05 bps additional cost per side**, mean performance remained positive. At
 
 The result supports a replicated short-horizon microstructure relationship under a causal spread-aware execution model, but the economic margin is narrow. **This is validation evidence, not production-ready alpha.**
 
-[Full research record](RESEARCH_SUMMARY.md) · [Validation status](VALIDATION_STATUS.md) · [Data availability](DATA_AVAILABILITY.md) · [Validation protocol](VALIDATION_PROTOCOL.md) · [Execution protocol](EXECUTION_PROTOCOL.md)
+[Full research record](RESEARCH_SUMMARY.md) · [Validation status](VALIDATION_STATUS.md) · [Reproduce a holdout](examples/holdout_20260829_091754/README.md) · [Data availability](DATA_AVAILABILITY.md) · [Validation protocol](VALIDATION_PROTOCOL.md) · [Execution protocol](EXECUTION_PROTOCOL.md)
 
 ## Quick Start
 
@@ -49,7 +49,14 @@ python src/data/plot_cost_sensitivity.py
 
 Generated figures are written to `figures/`.
 
-The complete historical experiment cannot be rerun from a fresh clone because the original raw WebSocket captures and large trade-level files are intentionally excluded. See [Data availability](DATA_AVAILABILITY.md) for the exact reproducibility boundary.
+One complete approximately 10-minute unseen holdout session is included for end-to-end reproduction from raw BTCUSDT book and trade captures:
+
+    python -m pip install -e .
+    python examples/holdout_20260829_091754/reproduce_sample.py
+
+The sample rebuilds the one-second features and reproduces the frozen 100 ms execution result of **78 completed trades and +0.0458951523 bps/trade**, including the mechanical causality checks.
+
+The full multi-session historical experiment cannot be rerun from a fresh clone because the remaining raw WebSocket captures and large trade-level files are intentionally excluded. See [Data availability](DATA_AVAILABILITY.md) for the exact reproducibility boundary.
 
 ---
 
