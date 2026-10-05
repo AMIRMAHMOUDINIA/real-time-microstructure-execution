@@ -7,7 +7,7 @@ name = "real-time-microstructure-execution"
 version = "0.1.0"
 description = "Execution-aware BTCUSDT market-microstructure research with causal execution, holdout validation, latency stress, and transaction-cost analysis."
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 license = "MIT"
 authors = [
     { name = "Amir Mahmoudinia" }
