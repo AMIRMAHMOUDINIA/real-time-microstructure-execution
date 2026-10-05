@@ -7,7 +7,7 @@ RAW_DIR = Path("data/raw")
 
 
 def find_latest_dataset():
-    files = list(RAW_DIR.glob("btcusdt_bookticker_*.csv"))
+    files = [*RAW_DIR.glob("btcusdt_bookticker_*.csv"), *RAW_DIR.glob("btcusdt_book_*.csv")]
 
     if not files:
         raise FileNotFoundError(

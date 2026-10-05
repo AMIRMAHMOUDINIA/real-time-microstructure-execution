@@ -60,6 +60,20 @@ The full multi-session historical experiment cannot be rerun from a fresh clone 
 
 ---
 
+## Live Collector Resilience
+
+The Binance WebSocket collector now reconnects after connection
+failures or prolonged inactivity using bounded exponential backoff.
+It rejects duplicate and decreasing book/trade identifiers during
+collection and writes a per-session JSON health report containing
+timeouts, reconnects, malformed messages, and sequence-integrity
+counters.
+
+The existing raw book and trade CSV schemas are unchanged, so the
+frozen research and execution pipeline remains compatible.
+
+---
+
 ## Research Architecture
 
     Binance WebSocket data
@@ -534,6 +548,7 @@ The main contribution is the research process rather than the absolute simulated
 The repository demonstrates:
 
 - asynchronous live market-data acquisition
+- tested WebSocket reconnect and stream-integrity monitoring
 - Level-1 market-microstructure feature engineering
 - trade-flow reconstruction
 - careful timestamp semantics
