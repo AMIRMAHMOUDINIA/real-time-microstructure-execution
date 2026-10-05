@@ -77,7 +77,7 @@ frozen research and execution pipeline remains compatible.
 
 ### Python compatibility and reproducibility
 
-The package supports Python 3.11 and newer. `requirements.txt` contains
+The package is tested on Python 3.11–3.14. `requirements.txt` contains
 compatible dependency ranges used for normal installation and CI.
 
 `requirements-lock.txt` preserves the exact Python 3.14 environment used
